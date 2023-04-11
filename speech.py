@@ -70,16 +70,16 @@ for match_id, start, end in match:
 print("in cell")
 print(cell)
 if operation[0]=="add":
-    ws["A3"].value=ws[cell[0]].value+ws[cell[1]].value
+    ws[cell[2]].value=ws[cell[0]].value+ws[cell[1]].value
     wb.save("sample.xlsx")
 if operation[0]=="subract":
-    ws["A3"].value=ws[cell[0]].value-ws[cell[1]].value
+    ws[cell[2]].value=ws[cell[0]].value-ws[cell[1]].value
     wb.save("sample.xlsx")
 if operation[0]=="multiply":
-    ws["A3"].value=ws[cell[0]].value*ws[cell[1]].value
+    ws[cell[2]].value=ws[cell[0]].value*ws[cell[1]].value
     wb.save("sample.xlsx")
 if operation[0]=="divide":
-    ws["A3"].value=ws[cell[0]].value/ws[cell[1]].value
+    ws[cell[2]].value=ws[cell[0]].value/ws[cell[1]].value
     wb.save("sample.xlsx")
 
     
